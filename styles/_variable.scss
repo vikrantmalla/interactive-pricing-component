@@ -1,0 +1,28 @@
+/*Color */
+
+
+/*Primary Color */
+
+$colorSoftCyan: hsl(174, 77%, 80%);
+$colorStrongCyan: hsl(174, 86%, 45%);
+$colorLightGrayishRed: hsl(14, 92%, 95%);
+$colorLightRed: hsl(15, 100%, 70%);
+$colorPaleBlue: hsl(226, 100%, 87%);
+
+/*Neutral Color */
+
+$colorWhite: hsl(0, 0%, 100%);
+$coloVeryPaleBlue: hsl(230, 100%, 99%);
+$colorLightGrayishBlue: hsl(224, 65%, 95%);
+$colorLightGrayishBlueBack: hsl(223, 50%, 87%);
+$colorGrayishBlue: hsl(225, 20%, 60%);
+$colorDarkDesaturatedBlue: hsl(227, 35%, 25%);
+
+/*mixin */
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}

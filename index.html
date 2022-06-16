@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="content-container">
+                <h2>Simple, traffic-based pricing</h2>
+                <p> Sign-up for our 30-day trial. No credit card required.</p>
+            </div>
+            <div class="pricing-container">
+                <div class="card-wrapper">
+                    <div class="header-container">
+                        <div class="pricing">
+                            <h4 id="pageviews">100k Pageviews</h4>
+                            <h1 id="price">$20 <span>/month</span></h1>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" type="range" min="20" max="100" value="60" step="20" class="sliderRanger" id="myRange">
+                        </div>
+                    </div>
+                    <div class="toggle-container">
+                        <span class="monthly">Monthly Billing</span>
+                        <label class="switch">
+                                <input type="checkbox" id="toggle">
+                                <span class="slider round"></span>
+                        </label>
+                        <span class="yearly">Yearly Billing</span>
+                    </div>
+                    <hr>
+                    <div class="cta-container">
+                        <div class="cta-list">
+                            <ul>
+                                <li>Unlimited websites</li>
+                                <li>100% data ownership</li>
+                                <li>Email reports</li>
+                            </ul>
+                        </div>
+                        <button> Start my trial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+
+</body>
+
+</html>

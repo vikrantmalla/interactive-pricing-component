@@ -1,0 +1,78 @@
+.pricing-container {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.1);
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        background-color: $colorWhite;
+        border-radius: 0.3rem;
+        .header-container {
+            @include flex(column, center);
+            gap: 1rem;
+            margin: 2rem 0 1.5rem;
+            position: relative;
+            .pricing {
+                @include flex(column, center);
+                gap: 5rem;
+                #pageviews {
+                    text-transform: uppercase;
+                    color: $colorGrayishBlue;
+                    font-size: 1rem;
+                }
+                #price {
+                    @include flex(row, center);
+                    font-size: 2.5rem;
+                    span {
+                        font-size: 0.8rem;
+                        color: $colorGrayishBlue;
+                    }
+                }
+                @media (min-width: 62em) {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 2rem 0;
+                    width: 100%;
+                }
+            }
+        }
+        .cta-container {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            .cta-list {
+                ul {
+                    list-style: none;
+                    li {
+                        font-size: 0.8rem;
+                        margin-bottom: 0.5rem;
+                        color: $colorGrayishBlue;
+                        &::before {
+                            content: url(../images/icon-check.svg);
+                            margin-right: 0.5rem;
+                        }
+                        @media (min-width: 42em) {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            button {
+                padding: 0.7rem 2rem;
+                border-radius: 5rem;
+                border: none;
+                background-color: $colorDarkDesaturatedBlue;
+                color: $colorLightGrayishBlue;
+            }
+            @media (min-width: 42em) {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
