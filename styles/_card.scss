@@ -3,17 +3,17 @@
     background-image: url(../images/bg-pattern.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
     width: 100%;
     padding: 1rem;
     @media (min-width: 62em) {
         width: 1440px;
+        height: 60vh;
     }
     .content-container {
-        margin-top: 1.5rem;
+        padding: 2rem 0;
         background-image: url(../images/pattern-circles.svg);
         background-repeat: no-repeat;
-        background-size: 40%;
+        background-size: 30%;
         background-position: center;
         height: 60%;
         @include flex(column, center);
@@ -23,6 +23,7 @@
         }
         p {
             margin: 0 2.5rem;
+            color: $colorGrayishBlue;
         }
         @media (min-width: 42em) {
             background-size: 20%;

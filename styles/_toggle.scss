@@ -2,10 +2,14 @@
     width: 100%;
     @include flex(row, center);
     gap: 0.5rem;
+    @media (min-width: 62em) {
+        gap: 1rem;
+        margin-left: 1.5rem;
+    }
     .switch {
         position: relative;
         display: inline-block;
-        width: 48px;
+        width: 44px;
         height: 22px;
     }
     .switch input {
@@ -41,7 +45,7 @@
         background-color: $colorSoftCyan;
     }
     input:checked+.slider:before {
-        transform: translateX(26px);
+        transform: translateX(22px);
     }
     /* Rounded sliders */
     .slider.round {
@@ -62,6 +66,9 @@
             padding: 0.1rem 0.5rem;
             border-radius: 0.5rem;
             background-color: hsl(14, 92%, 95%);
+            @media (min-width: 62em) {
+                content: "-25% discount";
+            }
         }
     }
 }

@@ -2,13 +2,14 @@
     max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
     .card-wrapper {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         width: 100%;
         background-color: $colorWhite;
-        border-radius: 0.3rem;
+        border-radius: 0.5rem;
         .header-container {
             @include flex(column, center);
             gap: 1rem;
@@ -20,14 +21,17 @@
                 #pageviews {
                     text-transform: uppercase;
                     color: $colorGrayishBlue;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.2rem;
                 }
-                #price {
+                h1 {
                     @include flex(row, center);
-                    font-size: 2.5rem;
+                    gap: 0.5rem;
+                    font-size: 0.8rem;
+                    color: $colorGrayishBlue;
                     span {
-                        font-size: 0.8rem;
-                        color: $colorGrayishBlue;
+                        font-size: 2.5rem;
+                        color: $colorDarkDesaturatedBlue;
                     }
                 }
                 @media (min-width: 62em) {
@@ -36,6 +40,9 @@
                     margin: 2rem 0;
                     width: 100%;
                 }
+            }
+            @media (min-width: 62em) {
+                margin: 1.5rem 0;
             }
         }
         .cta-container {
